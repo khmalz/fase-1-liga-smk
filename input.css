@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+   .underline-color-text {
+      @apply inline-block relative;
+   }
+   .underline-color-text:before {
+      @apply content-[''] absolute bg-[#FDD5A1] bg-opacity-80 -z-10 bottom-0 w-full h-3;
+   }
+}
